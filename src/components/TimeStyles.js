@@ -8,6 +8,12 @@ export const Welcome = styled.div`
     left: 50%;
     -ms-transform: translate(-50%,50%);
     transform: translate(-50%,-50%);
+    @media screen and (max-width: 300px) {
+        margin-top: -80px;
+    }
+    @media screen and ( max-width:400px) {
+        margin-top: -80px;
+    }
 `
 
 export const TimeStamp = styled.p`
@@ -17,7 +23,10 @@ export const TimeStamp = styled.p`
     padding: 0;
     padding-top: -45px;
     @media screen and (max-width: 600px) {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 300px) {
+        font-size: 4rem;
     }
 `
 
@@ -27,6 +36,9 @@ export const Greeting = styled.p`
     margin: 0;
     padding: 0;
     @media screen and (max-width:600px) {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+    @media screen and (max-width:300px) {
+        font-size: 2rem;
     }
 `
